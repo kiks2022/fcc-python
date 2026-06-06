@@ -46,6 +46,20 @@ class Square(Rectangle):
 
     def set_side(self, side):
         self.width = side
+    Rectangle(width=10, height=5)
+Area: 50
+Perimeter: 30
+Diagonal: 11.180339887498949
+**********
+**********
+**********
+**********
+**********
+
+Square(side=4)
+Area: 16
+After set_side(6): Square(side=6)
+Rectangles inside: 3
         self.height = side
 
     def __str__(self):
