@@ -22,22 +22,15 @@ class HashTable:
         if hashed_key in self.collection and key in self.collection[hashed_key]:
             return self.collection[hashed_key][key]
         return None
+
 # Test HashTable
 ht = HashTable()
-
-# Add some values
 ht.add("name", "Kikelomo")
 ht.add("program", "AnalystLab Africa")
 ht.add("language", "Python")
-
-# Lookup values
 print("name:", ht.lookup("name"))
 print("program:", ht.lookup("program"))
 print("language:", ht.lookup("language"))
-
-# Remove a key
 ht.remove("language")
 print("After removing 'language':", ht.lookup("language"))
-
-# Lookup non-existing key
 print("country:", ht.lookup("country"))
