@@ -46,21 +46,28 @@ class Square(Rectangle):
 
     def set_side(self, side):
         self.width = side
-    Rectangle(width=10, height=5)
-Area: 50
-Perimeter: 30
-Diagonal: 11.180339887498949
-**********
-**********
-**********
-**********
-**********
-
-Square(side=4)
-Area: 16
-After set_side(6): Square(side=6)
-Rectangles inside: 3
         self.height = side
 
     def __str__(self):
         return f'Square(side={self.width})'
+
+
+# Test Rectangle
+rect = Rectangle(10, 5)
+print(rect)
+print("Area:", rect.get_area())
+print("Perimeter:", rect.get_perimeter())
+print("Diagonal:", rect.get_diagonal())
+print(rect.get_picture())
+
+# Test Square
+sq = Square(4)
+print(sq)
+print("Area:", sq.get_area())
+sq.set_side(6)
+print("After set_side(6):", sq)
+
+# Test get_amount_inside
+rect2 = Rectangle(15, 10)
+small = Rectangle(4, 2)
+print("Rectangles inside:", rect2.get_amount_inside(small))
