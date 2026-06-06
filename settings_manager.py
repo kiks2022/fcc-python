@@ -36,4 +36,11 @@ def view_settings(settings):
     for key, value in settings.items():
         result += f"{key.capitalize()}: {value}\n"
     return result
+# Test it out
+print(view_settings(test_settings))
+print(add_setting(test_settings, ('font_size', 'large')))
+print(add_setting(test_settings, ('theme', 'light')))  # should fail - already exists
+print(update_setting(test_settings, ('theme', 'light')))
+print(delete_setting(test_settings, ('language')))
+print(view_settings(test_settings))
     
