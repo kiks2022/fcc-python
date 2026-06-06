@@ -55,6 +55,4 @@ A recursive solution to the classic Tower of Hanoi problem. Tracks and returns e
 
 ## About
 
-**Intern:** Adekoya Kikelomo Akorede
-**Program:** AnalystLab Africa AI Internship
 **Certification:** freeCodeCamp Python v9
