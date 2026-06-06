@@ -26,7 +26,7 @@ class HashTable:
 # Test HashTable
 ht = HashTable()
 ht.add("name", "Kikelomo")
-ht.add("program", "AnalystLab Africa")
+ht.add("program", "FCC Python")
 ht.add("language", "Python")
 print("name:", ht.lookup("name"))
 print("program:", ht.lookup("program"))
